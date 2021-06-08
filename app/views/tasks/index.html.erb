@@ -1,0 +1,9 @@
+<div class = "container" style = "text align center">
+<h1>Here comes your sacred tasks</h1>
+<ul>
+  <% @tasks.each do |task| %>
+    <li><%= link_to task.title, task_path(task) %></li>
+  <% end %>
+</ul>
+<a name="Create a new task" id="Create a new task" class="btn btn-primary" href="tasks/new" role="button">Create a new task</a>
+</div>
